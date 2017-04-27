@@ -20,11 +20,29 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(0)
-  } else {
-    fill(255)
-  }
+  // if (mouseIsPressed) {
+  //   fill(255, 204, 0)
+  // } else {
+  //   fill(173, 20, 109)
+  // }
 
   ellipse(mouseX, mouseY, 80, 80)
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    fill(221, 155, 13)
+  }
+  if (keyCode === RIGHT_ARROW) {
+    fill(255 )
+  }
+}
+function keyTyped() {
+  if (key === 'a') {
+fill(0)
+  } else if (key === 'b') {
+fill(133)
+  }
+  // uncomment to prevent any default behavior
+  // return false;
 }
